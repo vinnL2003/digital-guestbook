@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 */
 
-// Antarmuka Publik (Tamu & Kiosk)
+// Antarmuka Publik (Tamu & Registrasi)
 Route::get('/', [GuestController::class, 'welcome'])->name('guest.welcome');
 Route::get('/check-in', [GuestController::class, 'checkInForm'])->name('guest.check-in');
 Route::post('/check-in', [GuestController::class, 'storeCheckIn'])->name('guest.check-in.store');

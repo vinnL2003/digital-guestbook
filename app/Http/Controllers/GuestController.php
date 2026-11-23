@@ -13,7 +13,7 @@ use Inertia\Response;
 class GuestController extends Controller
 {
     /**
-     * Halaman Utama / Sambutan Kiosk Lobi & QR Code
+     * Halaman Utama / Sambutan Registrasi Tamu & QR Code
      */
     public function welcome(): Response
     {

@@ -51,7 +51,7 @@ export default function Login({
                     Masuk ke Sistem Buku Tamu
                 </h1>
                 <p className="text-xs text-sky-200/70">
-                    Silakan masukkan email kedinasan dan kata sandi Anda.
+                    Silakan masukkan email dan kata sandi Anda.
                 </p>
             </div>
 
@@ -63,14 +63,14 @@ export default function Login({
                 </div>
             )}
 
-            <form onSubmit={submit} className="space-y-4">
+            <form onSubmit={submit} className="space-y-4" autoComplete="off">
                 {/* Email Input */}
                 <div className="space-y-1.5">
                     <label 
                         htmlFor="email" 
                         className="block text-xs font-bold uppercase tracking-wider text-sky-200"
                     >
-                        Email Kedinasan <span className="text-rose-400">*</span>
+                        Email <span className="text-rose-400">*</span>
                     </label>
 
                     <div className="relative">
@@ -83,10 +83,9 @@ export default function Login({
                             name="email"
                             required
                             autoFocus
-                            autoComplete="username"
+                            autoComplete="off"
                             value={data.email}
                             onChange={(e) => setData('email', e.target.value)}
-                            placeholder="nama@bukutamu.com"
                             style={{ colorScheme: 'dark' }}
                             className="w-full pl-10 pr-4 py-3 min-h-[48px] rounded-xl bg-[#040e1a] border border-sky-800/80 focus:border-sky-400 focus:ring-2 focus:ring-sky-400/30 text-white font-medium placeholder-sky-400/40 text-base sm:text-sm transition-all shadow-inner"
                         />
@@ -127,10 +126,9 @@ export default function Login({
                             type={showPassword ? 'text' : 'password'}
                             name="password"
                             required
-                            autoComplete="current-password"
+                            autoComplete="new-password"
                             value={data.password}
                             onChange={(e) => setData('password', e.target.value)}
-                            placeholder="Masukkan kata sandi Anda"
                             style={{ colorScheme: 'dark' }}
                             className="w-full pl-10 pr-11 py-3 min-h-[48px] rounded-xl bg-[#040e1a] border border-sky-800/80 focus:border-sky-400 focus:ring-2 focus:ring-sky-400/30 text-white font-medium placeholder-sky-400/40 text-base sm:text-sm transition-all shadow-inner"
                         />
@@ -192,14 +190,14 @@ export default function Login({
                     </button>
                 </div>
 
-                {/* Quick Navigation Back to Welcome / Kiosk */}
+                {/* Quick Navigation Back to Welcome */}
                 <div className="pt-3 border-t border-sky-900/40 text-center">
                     <Link
                         href="/"
                         className="inline-flex items-center gap-1.5 text-xs text-sky-300/80 hover:text-white font-medium transition-colors"
                     >
                         <ArrowLeft className="w-3.5 h-3.5" />
-                        <span>Kembali ke Halaman Registrasi Tamu (Kiosk)</span>
+                        <span>Kembali ke Halaman Registrasi Tamu</span>
                     </Link>
                 </div>
             </form>

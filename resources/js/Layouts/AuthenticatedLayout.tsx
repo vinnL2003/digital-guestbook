@@ -96,10 +96,10 @@ export default function Authenticated({
                                 href={route('guest.welcome')}
                                 target="_blank"
                                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-medium bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-300 transition-all"
-                                title="Buka Tampilan Kiosk Lobi di Tab Baru"
+                                title="Buka Tampilan Registrasi Tamu di Tab Baru"
                             >
                                 <Monitor className="w-3.5 h-3.5 text-zinc-400" />
-                                <span>Layar Kiosk Lobi</span>
+                                <span>Layar Registrasi Tamu</span>
                             </Link>
 
                             <div className="relative">
@@ -219,7 +219,7 @@ export default function Authenticated({
                             </ResponsiveNavLink>
                         )}
                         <ResponsiveNavLink href={route('guest.welcome')}>
-                            Layar Kiosk Lobi
+                            Layar Registrasi Tamu
                         </ResponsiveNavLink>
                         <ResponsiveNavLink href={route('profile.edit')}>
                             Profil Akun

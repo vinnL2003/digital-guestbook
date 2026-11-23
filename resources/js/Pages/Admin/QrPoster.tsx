@@ -174,7 +174,7 @@ export default function QrPoster({ auth, setting, defaultCheckInUrl, defaultChec
                                             : 'border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-600 dark:text-zinc-400 font-medium'
                                     }`}
                                 >
-                                    <span className="text-xs block font-bold">3. Kiosk Lobi Utama</span>
+                                    <span className="text-xs block font-bold">3. Layar Registrasi Lobi</span>
                                     <span className="text-[10px] opacity-75 font-normal block mt-0.5">
                                         Halaman sambutan depan
                                     </span>
